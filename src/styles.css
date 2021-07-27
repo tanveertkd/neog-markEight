@@ -1,4 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-bg-color: #eff6ff;
+  --primary-accent-color: #4338ca;
+  --primary-shadow-color: #a5b4fc;
+}
+body {
+  background-color: var(--primary-bg-color);
+}
 .App {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
+}
+
+.navigation {
+  display: block;
+  background: var(--primary-accent-color);
+  padding: 1.5rem;
+}
+
+.nav-header {
+  text-align: start;
+  font-size: large;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+
+.primary-header {
+  margin: 1rem auto;
+}
+
+.primary-header h1 {
+  padding: 1rem;
+}
+
+#user-input {
+  padding: 0.8rem 1.6rem;
+  border-color: transparent;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 5pt 1.2pt var(--primary-shadow-color);
+  margin: 1rem auto;
+  width: 20%;
+}
+
+#emoji-table {
+  margin: 1rem auto;
+  max-width: 50%;
+}
+
+#food-item {
+  cursor: pointer;
+  box-shadow: 0 0 5pt 1.2pt var(--primary-shadow-color);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.4rem;
+  background-color: white;
+  font-size: larger;
+}
+
+.footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--primary-accent-color);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.footer-header p {
+  color: white;
+  padding: 0.1rem;
 }
